@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Practical</title>
+    <script src="midterm.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <h1 style="text-align: center">The Car Show</h1>
+
+    <!-- wrapper for both windows presented to user -->
+    <div class="wrapper" style="display: flex; gap: 100px;">   
+
+        <!-- Display small box with list of cars -->
+        <div class="inventory">
+            <h2>Current Inventory of Cars</h2>
+            
+            <div class="list-all"></div>
+        </div>
+        
+        <!-- Display input for user action -->
+        <div class="instructions">
+            <h2>What would you like to do?</h2>
+
+            <ul>
+                <li>Create a car - C</li>
+                <li>Read the details of a car - R</li>
+                <li>Update the details for a car - U</li>
+                <li>Delete a car - D</li>
+            </ul>
+            
+            <label for="choice"></label>
+            <input type="text" id="choice">
+            <button onclick="act()">Submit Your choice of action</button>
+
+            <div class="CRUD"></div>
+        </div>
+    </div>
+</body>
+
+</html>
